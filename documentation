@@ -1,0 +1,9 @@
+docker login
+
+export REPOSITORY_PREFIX=prasad890
+
+
+mvn clean install -Dmaven.test.skip -P buildDocker -Ddocker.image.prefix=${REPOSITORY_PREFIX} -Dcontainer.build.extraarg="--push" 
+
+
+-Dcontainer.platform="linux/amd64,linux/arm64"
