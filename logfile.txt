@@ -1,0 +1,204 @@
+11:22:15,234 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@1549bba7 - Adding [jar:file:/application/BOOT-INF/lib/spring-boot-3.4.1.jar!/org/springframework/boot/logging/logback/base.xml] to configuration watch list.
+11:22:15,234 |-INFO in ConfigurationWatchList(mainURL=file:/application/BOOT-INF/classes/logback-spring.xml, fileWatchList={/application/BOOT-INF/classes/logback-spring.xml}, urlWatchList=[}) - Cannot watch [jar:file:/application/BOOT-INF/lib/spring-boot-3.4.1.jar!/org/springframework/boot/logging/logback/base.xml] as its protocol is not one of file, http or https.
+11:22:15,244 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@1549bba7 - Adding [jar:file:/application/BOOT-INF/lib/spring-boot-3.4.1.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+11:22:15,244 |-INFO in ConfigurationWatchList(mainURL=file:/application/BOOT-INF/classes/logback-spring.xml, fileWatchList={/application/BOOT-INF/classes/logback-spring.xml}, urlWatchList=[}) - Cannot watch [jar:file:/application/BOOT-INF/lib/spring-boot-3.4.1.jar!/org/springframework/boot/logging/logback/defaults.xml] as its protocol is not one of file, http or https.
+11:22:15,280 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word applicationName with class [org.springframework.boot.logging.logback.ApplicationNameConverter]
+11:22:15,280 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+11:22:15,280 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word correlationId with class [org.springframework.boot.logging.logback.CorrelationIdConverter]
+11:22:15,280 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word esb with class [org.springframework.boot.logging.logback.EnclosedInSquareBracketsConverter]
+11:22:15,280 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+11:22:15,280 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+11:22:15,283 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p){} %clr(1){magenta} %clr(--- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%15.15t] %correlationId){faint}%clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx" substituted for "${CONSOLE_LOG_PATTERN:-%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}){} %clr(${PID:-}){magenta} %clr(--- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%15.15t] ${LOG_CORRELATION_PATTERN:-}){faint}%clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"
+11:22:15,283 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "UTF-8" substituted for "${CONSOLE_LOG_CHARSET:-${file.encoding:-UTF-8}}"
+11:22:15,286 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "TRACE" substituted for "${CONSOLE_LOG_THRESHOLD:-TRACE}"
+11:22:15,286 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "" substituted for "${CONSOLE_LOG_STRUCTURED_FORMAT:-}"
+11:22:15,289 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX} %5p 1 --- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%t] %correlationId%-40.40logger{39} : %m%n%wEx" substituted for "${FILE_LOG_PATTERN:-%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}} ${LOG_LEVEL_PATTERN:-%5p} ${PID:-} --- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%t] ${LOG_CORRELATION_PATTERN:-}%-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"
+11:22:15,289 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "UTF-8" substituted for "${FILE_LOG_CHARSET:-${file.encoding:-UTF-8}}"
+11:22:15,289 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "TRACE" substituted for "${FILE_LOG_THRESHOLD:-TRACE}"
+11:22:15,289 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "" substituted for "${FILE_LOG_STRUCTURED_FORMAT:-}"
+11:22:15,289 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "/tmp/spring.log" substituted for "${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}}/spring.log}"
+11:22:15,290 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@1549bba7 - Adding [jar:file:/application/BOOT-INF/lib/spring-boot-3.4.1.jar!/org/springframework/boot/logging/logback/console-appender.xml] to configuration watch list.
+11:22:15,290 |-INFO in ConfigurationWatchList(mainURL=file:/application/BOOT-INF/classes/logback-spring.xml, fileWatchList={/application/BOOT-INF/classes/logback-spring.xml}, urlWatchList=[}) - Cannot watch [jar:file:/application/BOOT-INF/lib/spring-boot-3.4.1.jar!/org/springframework/boot/logging/logback/console-appender.xml] as its protocol is not one of file, http or https.
+11:22:15,309 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@1549bba7 - Adding [jar:file:/application/BOOT-INF/lib/spring-boot-3.4.1.jar!/org/springframework/boot/logging/logback/file-appender.xml] to configuration watch list.
+11:22:15,309 |-INFO in ConfigurationWatchList(mainURL=file:/application/BOOT-INF/classes/logback-spring.xml, fileWatchList={/application/BOOT-INF/classes/logback-spring.xml}, urlWatchList=[}) - Cannot watch [jar:file:/application/BOOT-INF/lib/spring-boot-3.4.1.jar!/org/springframework/boot/logging/logback/file-appender.xml] as its protocol is not one of file, http or https.
+11:22:15,322 |-WARN in ch.qos.logback.core.model.processor.ImplicitModelHandler - Ignoring unknown property [jmxConfigurator] in [ch.qos.logback.classic.LoggerContext]
+11:22:15,326 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+11:22:15,327 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4e61e4c2 - Propagating ERROR level on Logger[org.apache.catalina.startup.DigesterFactory] onto the JUL framework
+11:22:15,327 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+11:22:15,327 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4e61e4c2 - Propagating ERROR level on Logger[org.apache.catalina.util.LifecycleBase] onto the JUL framework
+11:22:15,327 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+11:22:15,327 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4e61e4c2 - Propagating WARN level on Logger[org.apache.coyote.http11.Http11NioProtocol] onto the JUL framework
+11:22:15,327 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+11:22:15,327 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4e61e4c2 - Propagating WARN level on Logger[org.apache.sshd.common.util.SecurityUtils] onto the JUL framework
+11:22:15,327 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+11:22:15,327 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4e61e4c2 - Propagating WARN level on Logger[org.apache.tomcat.util.net.NioSelectorPool] onto the JUL framework
+11:22:15,327 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+11:22:15,327 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4e61e4c2 - Propagating ERROR level on Logger[org.eclipse.jetty.util.component.AbstractLifeCycle] onto the JUL framework
+11:22:15,328 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+11:22:15,328 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4e61e4c2 - Propagating WARN level on Logger[org.hibernate.validator.internal.util.Version] onto the JUL framework
+11:22:15,328 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+11:22:15,328 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4e61e4c2 - Propagating WARN level on Logger[org.springframework.boot.actuate.endpoint.jmx] onto the JUL framework
+11:22:15,328 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+11:22:15,328 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:22:15,330 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "TRACE" substituted for "${CONSOLE_LOG_THRESHOLD}"
+11:22:15,331 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:22:15,332 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p){} %clr(1){magenta} %clr(--- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%15.15t] %correlationId){faint}%clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx" substituted for "${CONSOLE_LOG_PATTERN}"
+11:22:15,332 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "UTF-8" substituted for "${CONSOLE_LOG_CHARSET}"
+11:22:15,346 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+11:22:15,346 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+11:22:15,350 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "TRACE" substituted for "${FILE_LOG_THRESHOLD}"
+11:22:15,350 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:22:15,351 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX} %5p 1 --- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%t] %correlationId%-40.40logger{39} : %m%n%wEx" substituted for "${FILE_LOG_PATTERN}"
+11:22:15,351 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "UTF-8" substituted for "${FILE_LOG_CHARSET}"
+11:22:15,351 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "/tmp/spring.log" substituted for "${LOG_FILE}"
+11:22:15,353 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "/tmp/spring.log.%d{yyyy-MM-dd}.%i.gz" substituted for "${LOGBACK_ROLLINGPOLICY_FILE_NAME_PATTERN:-${LOG_FILE}.%d{yyyy-MM-dd}.%i.gz}"
+11:22:15,353 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "false" substituted for "${LOGBACK_ROLLINGPOLICY_CLEAN_HISTORY_ON_START:-false}"
+11:22:15,354 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "10MB" substituted for "${LOGBACK_ROLLINGPOLICY_MAX_FILE_SIZE:-10MB}"
+11:22:15,354 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "0" substituted for "${LOGBACK_ROLLINGPOLICY_TOTAL_SIZE_CAP:-0}"
+11:22:15,357 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@208301085 - setting totalSizeCap to 0 Bytes
+11:22:15,357 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@16ade133 - value "7" substituted for "${LOGBACK_ROLLINGPOLICY_MAX_HISTORY:-7}"
+11:22:15,360 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@208301085 - Archive files will be limited to [10 MB] each.
+11:22:15,361 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@208301085 - Will use gz compression
+11:22:15,362 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@208301085 - Will use the pattern /tmp/spring.log.%d{yyyy-MM-dd}.%i for the active file
+11:22:15,370 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@36dfbdaf - The date pattern is 'yyyy-MM-dd' from file name pattern '/tmp/spring.log.%d{yyyy-MM-dd}.%i.gz'.
+11:22:15,370 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@36dfbdaf - Roll-over at midnight.
+11:22:15,370 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy@36dfbdaf - Setting initial period to 2025-05-02T11:22:15.370Z
+11:22:15,378 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: /tmp/spring.log
+11:22:15,378 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [/tmp/spring.log]
+11:22:15,379 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+11:22:15,379 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4e61e4c2 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+11:22:15,380 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+11:22:15,380 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+11:22:15,380 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@4f82663e - End of configuration.
+11:22:15,381 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@e04ccf8 - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+2025-05-02T11:22:15.629Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.s.p.c.CustomersServiceApplication    : Starting CustomersServiceApplication v3.4.1 using Java 17.0.15 with PID 1 (/application/BOOT-INF/classes started by root in /application)
+2025-05-02T11:22:15.645Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.s.p.c.CustomersServiceApplication    : The following 1 profile is active: "docker"
+2025-05-02T11:22:15.762Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888/
+2025-05-02T11:22:15.763Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://localhost:8888/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/customers-service/default": Connection refused. Will be trying the next url if available
+2025-05-02T11:22:15.763Z  WARN 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@6034e75d uris = array<String>['http://localhost:8888/'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/customers-service/default": Connection refused
+2025-05-02T11:22:15.763Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-server:8888
+2025-05-02T11:22:15.763Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customers-service, profiles=[docker], label=null, version=7126666fccacb248e6725f7ad8537eee3b9cd805, state=
+2025-05-02T11:22:15.763Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-server:8888
+2025-05-02T11:22:15.763Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=customers-service, profiles=[default], label=null, version=7126666fccacb248e6725f7ad8537eee3b9cd805, state=
+2025-05-02T11:22:15.764Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888/
+2025-05-02T11:22:15.764Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://localhost:8888/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/customers-service/docker": Connection refused. Will be trying the next url if available
+2025-05-02T11:22:15.764Z  WARN 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@36074e47 uris = array<String>['http://localhost:8888/'], optional = true, profiles = 'docker']): I/O error on GET request for "http://localhost:8888/customers-service/docker": Connection refused
+2025-05-02T11:22:15.764Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888/
+2025-05-02T11:22:15.789Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://localhost:8888/:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/customers-service/default": Connection refused. Will be trying the next url if available
+2025-05-02T11:22:15.789Z  WARN 1 --- [customers-service] [           main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@36453307 uris = array<String>['http://localhost:8888/'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/customers-service/default": Connection refused
+2025-05-02T11:22:19.420Z  INFO 1 --- [customers-service] [           main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-02T11:22:19.881Z  INFO 1 --- [customers-service] [           main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 428 ms. Found 2 JPA repository interfaces.
+2025-05-02T11:22:20.860Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f3ed29fb-0c19-39da-bf9b-5ea349aa5626
+2025-05-02T11:22:23.571Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-05-02T11:22:23.619Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-02T11:22:23.620Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-05-02T11:22:23.800Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-02T11:22:23.802Z  INFO 1 --- [customers-service] [           main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8004 ms
+2025-05-02T11:22:26.780Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-02T11:22:27.869Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2025-05-02T11:22:27.870Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@15c3585
+2025-05-02T11:22:27.871Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-02T11:22:29.079Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-02T11:22:29.342Z  INFO 1 --- [customers-service] [           main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-05-02T11:22:29.461Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-02T11:22:30.494Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-02T11:22:31.616Z  INFO 1 --- [customers-service] [           main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'net.ttddyy.dsproxy.support.ProxyDataSource@149ef64a']
+	Database driver: undefined/unknown
+	Database version: 2.7.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-02T11:22:33.754Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-02T11:22:33.760Z  INFO 1 --- [customers-service] [           main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02T11:22:34.191Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-02T11:22:36.420Z  INFO 1 --- [customers-service] [           main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-05-02T11:22:36.526Z  WARN 1 --- [customers-service] [           main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-02T11:22:36.538Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2025-05-02T11:22:36.667Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-05-02T11:22:36.696Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-05-02T11:22:36.701Z  INFO 1 --- [customers-service] [           main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-02T11:22:36.712Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-05-02T11:22:36.713Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-05-02T11:22:36.714Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-05-02T11:22:36.714Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-05-02T11:22:36.715Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-05-02T11:22:36.715Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-05-02T11:22:36.715Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-05-02T11:22:36.875Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-05-02T11:22:36.881Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-05-02T11:22:36.884Z  INFO 1 --- [customers-service] [           main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-02T11:22:36.890Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1746184956890 with initial instances count: 1
+2025-05-02T11:22:36.898Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMERS-SERVICE with eureka with status UP
+2025-05-02T11:22:36.900Z  INFO 1 --- [customers-service] [           main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1746184956900, current=UP, previous=STARTING]
+2025-05-02T11:22:36.903Z  INFO 1 --- [customers-service] [foReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMERS-SERVICE/7942215fb334:customers-service:8081: registering service...
+2025-05-02T11:22:36.958Z  INFO 1 --- [customers-service] [foReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMERS-SERVICE/7942215fb334:customers-service:8081 - registration status: 204
+2025-05-02T11:22:37.002Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-05-02T11:22:37.004Z  INFO 1 --- [customers-service] [           main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-05-02T11:22:37.036Z  INFO 1 --- [customers-service] [           main] [                                                 ] o.s.s.p.c.CustomersServiceApplication    : Started CustomersServiceApplication in 28.105 seconds (process running for 29.231)
+2025-05-02T11:22:38.362Z  WARN 1 --- [customers-service] [/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-05-02T11:22:38.362Z  WARN 1 --- [customers-service] [/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 44 spans due to ResourceAccessException(I/O error on POST request for "http://tracing-server:9411/api/v2/spans": tracing-server: Temporary failure in name resolution)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://tracing-server:9411/api/v2/spans": tracing-server: Temporary failure in name resolution
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateSender.postSpans(ZipkinRestTemplateSender.java:50)
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69)
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41)
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123)
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266)
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.UnknownHostException: tracing-server: Temporary failure in name resolution
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:48)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 9 common frames omitted
+
+2025-05-02T11:22:39.579Z  INFO 1 --- [customers-service] [nio-8081-exec-1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02T11:22:39.580Z  INFO 1 --- [customers-service] [nio-8081-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-02T11:22:39.582Z  INFO 1 --- [customers-service] [nio-8081-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-02T11:27:45.596Z  INFO 1 --- [customers-service] [rap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-05-02T11:28:26.301Z  INFO 1 --- [customers-service] [nio-8081-exec-9] [6814ac5a22c2880fa46c6b69d978e707-192dd3020580d27d] o.s.s.p.customers.web.PetResource        : Saving pet [Pet@4a34e273 id = [null], name = 'PeetBaker', birthDate = Thu May 01 00:00:00 UTC 2025, type = 'dog', ownerFirstname = 'Bhavaniprasad', ownerLastname = 'moru']
+2025-05-02T11:32:54.393Z  INFO 1 --- [customers-service] [rap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

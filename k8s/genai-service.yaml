@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: genai-service
+  namespace: petclinic
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: genai-service
+  template:
+    metadata:
+      labels:
+        app: genai-service
+    spec:
+      containers:
+      - name: genai-service
+        image: prasad890/spring-petclinic-genai-service
+        resources:
+          limits:
+            memory: 512Mi
+          requests:
+            memory: 256Mi
+        ports:
+        - containerPort: 8084
+        env:
+        - name: OPENAI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: openai-credentials
+              key: openai-api-key
+        - name: AZURE_OPENAI_KEY
+          valueFrom:
+            secretKeyRef:
+              name: openai-credentials
+              key: azure-openai-key
+        - name: AZURE_OPENAI_ENDPOINT
+          valueFrom:
+            secretKeyRef:
+              name: openai-credentials
+              key: azure-openai-endpoint
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: genai-service
+  namespace: petclinic
+spec:
+  selector:
+    app: genai-service
+  ports:
+  - port: 8084
+    targetPort: 8084

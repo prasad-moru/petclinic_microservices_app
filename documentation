@@ -7,3 +7,84 @@ mvn clean install -Dmaven.test.skip -P buildDocker -Ddocker.image.prefix=${REPOS
 
 
 -Dcontainer.platform="linux/amd64,linux/arm64"
+
+
+docker run -d -e MYSQL_ROOT_PASSWORD=petclinic -e MYSQL_DATABASE=petclinic -p 3306:3306 mysql:8.0
+
+
+
+export AZURE_OPENAI_ENDPOINT="https://petclinic.openai.azure.com"
+export AZURE_OPENAI_KEY="E2jrYMb1QmxMTgxadebnuMAolBK5FT3zjcP1gQ5PhDHaUquD3h5XJQQJ99BEACYeBjFXJ3w3AAABACOG1lXp"
+
+
+kubernetes migration 
+
+echo -n "your-openai-api-key" | base64
+echo -n "https://petclinic.openai.azure.com" | base64
+echo -n "E2jrYMb1QmxMTgxadebnuMAolBK5FT3zjcP1gQ5PhDHaUquD3h5XJQQJ99BEACYeBjFXJ3w3AAABACOG1lXp" | base64
+
+REMOVED
+echo -n "REMOVED" | base64
+
+# Create the namespace first
+kubectl apply -f namespace.yaml
+
+# Apply the secrets
+kubectl apply -f genai-service_screts.yaml
+
+# Apply infrastructure services first
+kubectl apply -f config-server.yaml
+kubectl apply -f discovery-server.yaml
+
+# Wait for them to be ready before deploying the application services
+kubectl wait --for=condition=ready pod -l app=config-server -n petclinic --timeout=300s
+kubectl wait --for=condition=ready pod -l app=discovery-server -n petclinic --timeout=300s
+
+# Apply the rest of the services
+kubectl apply -f customers-service.yaml
+kubectl apply -f visits-service.yaml
+kubectl apply -f vets-service.yaml
+kubectl apply -f genai-service.yaml
+kubectl apply -f api-gateway.yaml
+kubectl apply -f tracing-server.yaml
+kubectl apply -f admin-server.yaml
+kubectl apply -f grafana-monitoring.yaml
+kubectl apply -f prometheus.yaml
+
+# Apply the ingress last
+kubectl apply -f ingress.yaml
+
+
+minikube addons enable ingress
+
+kubectl get pods -n petclinic
+kubectl get services -n petclinic
+
+minikube ip
+
+
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+
+
+
+
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+sudo install kubectl /usr/local/bin/kubectl
+
+
+RTJqcllNYjFRbXhNVGd4YWRlYm51TUFvbEJLNUZUM3pqY1AxZ1E1UGhESGFVcXVEM2g1WEpRUUo5OUJFQUNZZUJqRlhKM3czQUFBQkFDT0cxbFhw
+
+echo "RTJqcllNYjFRbXhNVGd4YWRlYm51TUFvbEJLNUZUM3pqY1AxZ1E1UGhESGFVcXVEM2g1WEpRUUo5OUJFQUNZZUJqRlhKM3czQUFBQkFDT0cxbFhw" | base64 --decode
+
+
+echo "aHR0cHM6Ly9wZXRjbGluaWMub3BlbmFpLmF6dXJlLmNvbQ==" | base64 --decode
+
+echo "c2stcHJvai10VXJ4OG1JVEJvMlhwWTBsdnkwS3gxdnh2S09JOUFmYTc2WmJUR0FYQnI5enk2Z1ZjS3BqQno2YzZfWFNFMUV6VWo1ZHZrZkxpdFQzQmxia0ZKOWlLRkJuYlJYOUNHSnhoWThnNDFZazNmYjBFNFRCOW9KYUhEc2xtZFprOTZPdm9MTnFZcWFGZlE2Rm5LdVlVVVlvOWo0blBFQUE=" | base64 --decode
+
+
+
+kubectl patch svc api-gateway -n petclinic -p '{"spec": {"type": "NodePort"}}'
+
+minikube service api-gateway -n petclinic --url
